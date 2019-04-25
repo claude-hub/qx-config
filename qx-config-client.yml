@@ -1,0 +1,30 @@
+﻿# 配置中心
+spring:
+  profiles:
+    active:
+      - dev
+---
+server:
+  port: 7001
+spring:
+  profiles: dev
+  application:
+    name: qx-config-clent
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-dev.com:7001/eureka/
+
+---
+server:
+  port: 7002
+spring:
+  profiles: test
+  application:
+    name: qx-config-clent
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-test.com:7001/eureka/
