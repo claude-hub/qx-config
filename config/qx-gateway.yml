@@ -1,0 +1,29 @@
+---
+spring:
+  profiles: 9999
+  redis:
+    password:
+    host: 123.207.242.177
+    timeout: 5000
+server:
+  port: 9999
+
+---
+spring:
+  profiles: 9998
+  redis:
+    password:
+    host: 123.207.242.177
+    timeout: 5000
+server:
+  port: 9998
+
+---
+spring:
+  profiles: 9997
+  redis:
+    password:
+    host: 123.207.242.177
+    timeout: 5000
+server:
+  port: 9997
